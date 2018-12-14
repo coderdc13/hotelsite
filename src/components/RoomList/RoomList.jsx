@@ -21,7 +21,6 @@ export default function RoomList(props) {
           <hr />
         </div>
         {/* ))} */}
-        <Button onClick>Find Rooms</Button>
       </div>
     </div>
   );

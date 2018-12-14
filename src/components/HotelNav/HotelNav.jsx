@@ -22,7 +22,7 @@ const BakeryNav = props => {
       <Navbar.Collapse>
         <Nav pullRight>
           <NavItem className="links" eventKey={'reservations'}>
-            Reservations
+            Reservation Finder
           </NavItem>
           <NavItem className="links" eventKey={'roomForm'}>
             Room Form

@@ -2,7 +2,7 @@ import React from 'react';
 import { Button } from 'react-bootstrap';
 import './style.css';
 
-export default function ReservationList(props) {
+export default function ReservationFinder(props) {
   return (
     <div className="reservation-container">
       {!props.dataReservation.msg ? (
