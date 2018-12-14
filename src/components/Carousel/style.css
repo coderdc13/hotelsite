@@ -1,0 +1,50 @@
+#carousel {
+  position: relative;
+  height: 500px;
+  overflow: hidden;
+}
+
+#photo-container {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+  /* z-index: -1; */
+}
+
+#photo-container .carousel-text {
+  position: absolute;
+  color: white;
+  bottom: 75%;
+  left: 50%;
+  transform: translateX(-50%);
+  font-weight: bold;
+  text-shadow: 2px 2px lightgray;
+}
+
+#carousel-return-container {
+  /* //display flex here nothing else higher */
+  position: absolute;
+  bottom: 100px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.right-arrow,
+.left-arrow {
+  position: absolute;
+  top: 50%;
+}
+
+.right-arrow {
+  right: 0px;
+}
+
+.left-arrow {
+  left: 0px;
+}
+
+i {
+  color: white;
+}

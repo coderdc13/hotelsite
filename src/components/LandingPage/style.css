@@ -1,0 +1,65 @@
+/* #bakeryNav .navbar-toggle {
+  margin-top: 28px;
+} */
+
+.cardHolder {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.mainContainer {
+  height: 100%;
+}
+
+#bakeryNav .navbar-collapse {
+  border-top: none;
+  background: white;
+}
+
+#bakeryNav .logo a:hover {
+  background: inherit;
+}
+
+#bakeryNav .logo img {
+  height: 60px;
+}
+
+#bakeryNav .logo p {
+  display: inline-block;
+  margin-left: 15px;
+  font-size: 18px;
+  color: #d66e5a;
+}
+
+#bakeryNav .links {
+  margin-top: 18px;
+  font-size: 16px;
+}
+
+#bakeryNav .links a {
+  color: #d66e5a;
+  background: inherit;
+}
+
+#bakeryNav .cart {
+  height: 50px;
+  position: fixed;
+  bottom: 25px;
+  right: 25px;
+}
+
+#bakeryNav .circle {
+  width: 23px;
+  height: 23px;
+  border-radius: 50%;
+  font-size: 16px;
+  color: #fff;
+  line-height: 25px;
+  text-align: center;
+  background: #d66e5a;
+  position: fixed;
+  bottom: 57px;
+  right: 15px;
+  z-index: 2;
+}

@@ -1,0 +1,21 @@
+.reservation-container {
+  position: relative;
+  height: 500px;
+}
+
+.reservation-List {
+  background-image: url('http://www.kstourandtravels.com/wp-content/uploads/2017/05/Hotel-Reservation.jpg');
+  background-repeat: no-repeat;
+  height: 100%;
+  background-size: cover;
+  background-position: center;
+}
+
+.res-search {
+  position: absolute;
+  bottom: 100px;
+  left: 50%;
+  transform: translateX(-50%);
+  font-weight: bold;
+  text-shadow: 2px 2px black;
+}

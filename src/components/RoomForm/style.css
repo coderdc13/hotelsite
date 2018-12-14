@@ -1,0 +1,28 @@
+.room-form-container {
+  position: relative;
+  height: 500px;
+}
+
+.create-room-header {
+  color: white;
+}
+
+.room-form {
+  background-image: url('https://cdn.vox-cdn.com/thumbor/MNmrMZsA4UjaUMoEZHIxwGUBcz8=/1400x1400/filters:format(jpeg)/cdn.vox-cdn.com/uploads/chorus_asset/file/10686791/Hilton_Panama_Alienware_Room_Gaming_hotel_room_12.jpg');
+  background-repeat: no-repeat;
+  height: 100%;
+  background-size: cover;
+  background-position: center;
+  color: black;
+}
+
+
+
+.room-add {
+  position: absolute;
+  bottom: 100px;
+  left: 50%;
+  transform: translateX(-50%);
+  font-weight: bold;
+  text-shadow: 2px 2px black;
+}
