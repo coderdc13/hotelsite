@@ -8,7 +8,7 @@ import HotelNav from '../HotelNav/HotelNav';
 import RoomList from '../RoomList/RoomList';
 import Carousel from '../Carousel/Carousel';
 import Card from '../Card/Card';
-import ReservationList from '../ReservationList/ReservationList';
+import ReservationFinder from '../ReservationFinder/ReservationFinder';
 import RoomForm from '../RoomForm/RoomForm';
 import './style.css';
 
@@ -100,7 +100,7 @@ class LandingPage extends React.Component {
         <div className="mainContainer">
           {this.state.view === 'carousel' && <Carousel />}
           {this.state.view === 'reservations' && (
-            <ReservationList dataReservation={this.state.dataReservation} />
+            <ReservationFinder dataReservation={this.state.dataReservation} />
           )}
           {this.state.view === 'roomForm' && <RoomForm />}
           {this.state.view === 'roomList' && <RoomList />}
