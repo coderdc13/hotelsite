@@ -53,7 +53,49 @@ class Carousel extends React.Component {
 
   addReservation = e => {
     // POST method to add a reservation
+    const reservationBody = {
+      reserver: this.state.reserver,
+      roomReserving: this.state.roomReserving,
+      checkIn: this.state.checkIn,
+      checkOut: this.state.checkOut,
+    }
+    e.preventDefault();
+    fetch(`http://54.85.179.245/api/rest/reservation`, {
+      method: 'Post',
+      headers: {
+        'Content-Type': 'application/json',
+
+      },
+      body: JSON.stringify(reservationBody),
+    })
+    .then(response => response.json())
+    .then(data => {
+      this.setState({
+        postResvResponse: data.msg,
+        resInformation: data
+      })
+    })
+    .catch(err => {
+      console.log('Error', err)
+    })
   };
+finishConfirm = () => {
+  this.setState({
+    postResvResponse: '',
+  });
+};
+
+handleFormChange = e => {
+  this.setState({
+    [e.target.name]: e.target.value,
+  });
+};
+
+handleCheckboxChange = e => {
+  this.setState({
+    [e.target.name]: !this.state[e.target.name]
+  });
+};
 
   render() {
     return (

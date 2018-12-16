@@ -9,20 +9,20 @@ export default function ReservationFinder(props) {
         <div className="reservation-List">
           <div style={{ color: 'white' }} className="res-search">
             <h3>Find Reservation By ID Number</h3>
-            <h4>Check In: </h4>
-            <h4>Check Out: </h4>
-            <h4>Room Name: </h4>
-            <h4>Room Number: </h4>
+            <h4>Check In: {props.dataReservation.checkIn} </h4>
+            <h4>Check Out: {props.dataReservation.checkOut} </h4>
+            <h4>Room Name: {props.dataReservation.reserver} </h4>
+            <h4>Room Number: {props.dataReservation.roomReserving}</h4>
 
-            <input onChange />
-            <Button onClick>Find Reservations</Button>
-            <Button onClick>Delete Reservation</Button>
+            <input onChange={props.handleResNumber}/>
+            <Button onClick={props.getDataReservation}>Find Reservations</Button>
+            <Button onClick={() => props.deleteReservation(props.resId)}>Delete Reservation</Button>
           </div>
         </div>
       ) : (
         <div className="reservation-List">
           <h1 style={{ color: 'white' }}> 'Reservation Not Found'</h1>
-          <Button onClick>Go To Main Page</Button>
+          
         </div>
       )}
     </div>

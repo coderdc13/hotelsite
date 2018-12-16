@@ -13,14 +13,14 @@ export default function RoomList(props) {
           chooose from. Don't worry, they are all super FUNKY!!
         </p>
         <h1>Available Rooms</h1>
-        {/* {props.roomList.map((room, index) => ( */}
+        {props.roomList.map((room, index) => (
         <div style={{ color: 'black' }} key>
-          <h3 style={{ color: 'black' }}>Room Name: </h3>
-          <h3 style={{ color: 'black' }}>Room Number: </h3>
-          <h3 style={{ color: 'black' }}>Price: </h3>
+          <h3 style={{ color: 'black' }}>Room Name: {room.name} </h3>
+          <h3 style={{ color: 'black' }}>Room Number: {room.number} </h3>
+          <h3 style={{ color: 'black' }}>Price: {room.price} </h3>
           <hr />
         </div>
-        {/* ))} */}
+        ))}
       </div>
     </div>
   );
